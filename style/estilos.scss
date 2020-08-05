@@ -75,7 +75,7 @@ header {
     }
 
     #btn-menu:checked~.menu {
-        margin-top: 0vh;
+        margin-top: 130px;
     }
     #btn-menu:checked~.image_menu {
         display: none;
@@ -369,6 +369,9 @@ footer {
         #btn-menu:checked~.menu {
             margin-top: 0px;
         }
+        .image_cruz{
+            display: none;
+        }
     }
 
     .encabezado h1 {
@@ -573,6 +576,9 @@ footer {
 
         #btn-menu:checked~.menu {
             margin-top: 0px;
+        }
+        .image_cruz{
+            display: none;
         }
     }
 

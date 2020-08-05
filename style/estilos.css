@@ -88,7 +88,7 @@ header .menu .container li a:hover {
 }
 
 header #btn-menu:checked ~ .menu {
-  margin-top: 0vh;
+  margin-top: 130px;
 }
 
 header #btn-menu:checked ~ .image_menu {
@@ -446,6 +446,9 @@ footer .contactos img:hover {
   header #btn-menu:checked ~ .menu {
     margin-top: 0px;
   }
+  header .image_cruz {
+    display: none;
+  }
   .encabezado h1 {
     margin-left: 10%;
     font-size: 4vw;
@@ -643,6 +646,9 @@ footer .contactos img:hover {
   }
   header #btn-menu:checked ~ .menu {
     margin-top: 0px;
+  }
+  header .image_cruz {
+    display: none;
   }
   .encabezado h1 {
     margin-left: 10%;
