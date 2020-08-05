@@ -42,7 +42,7 @@ header {
         background: #0000EC;
         position: absolute;
         /*margin top para que desaparezca*/
-        margin-top: -300px;
+        margin-top: -100vh;
         width: 100%;
         height: 224px;
         transition: all ease 1s;
@@ -75,7 +75,7 @@ header {
     }
 
     #btn-menu:checked~.menu {
-        margin-top: 265px;
+        margin-top: 42vh;
     }
     #btn-menu:checked~.image_menu {
         display: none;
