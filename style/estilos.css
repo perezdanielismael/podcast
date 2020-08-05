@@ -88,7 +88,7 @@ header .menu .container li a:hover {
 }
 
 header #btn-menu:checked ~ .menu {
-  margin-top: 20vh;
+  margin-top: 0vh;
 }
 
 header #btn-menu:checked ~ .image_menu {
