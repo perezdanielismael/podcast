@@ -403,8 +403,7 @@ footer {
     }
     .contenido {
         display: flex;
-        flex-flow: row wrap;
-      
+        flex-flow: row wrap;   
         h2 {
             font-size: 42px;
             font-family: 'IBM Plex Sans', sans-serif;
@@ -412,15 +411,15 @@ footer {
             margin: 64px 0 2vh 5%;
             color: white;
         }
-    
         .episodios {
             display: flex;
-            justify-content: space-around;
-            margin: auto;
-            align-items: flex-start;
             flex-flow: row wrap;
-            height: 900px;
+            justify-content: space-around;
+            align-content: flex-start;
+            margin: auto;
+            height: 700px;
             iframe {
+                padding-top: 20px;
                 width: 40%;
                 max-width: 500px;
             }
@@ -506,6 +505,11 @@ footer {
             height: 204px;
         }
     }
+    .segundo_articulo{
+        h2{
+            margin-left: 10%;
+        }
+    }
     .galeria {
         .imagenes {
             width: 33%;
@@ -514,6 +518,7 @@ footer {
     .tercer_articulo {
         h2{
             margin-bottom: 0;
+            margin-left: 10%;
         }
         .contenedor-temas {
             display: flex;

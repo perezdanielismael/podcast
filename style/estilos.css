@@ -523,19 +523,19 @@ footer .contactos img:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: auto;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    height: 900px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    margin: auto;
+    height: 700px;
   }
   .contenido .episodios iframe {
+    padding-top: 20px;
     width: 40%;
     max-width: 500px;
   }
@@ -615,11 +615,15 @@ footer .contactos img:hover {
     width: 464px;
     height: 204px;
   }
+  .segundo_articulo h2 {
+    margin-left: 10%;
+  }
   .galeria .imagenes {
     width: 33%;
   }
   .tercer_articulo h2 {
     margin-bottom: 0;
+    margin-left: 10%;
   }
   .tercer_articulo .contenedor-temas {
     display: -webkit-box;
