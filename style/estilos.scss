@@ -9,7 +9,8 @@ $color-terciario:#00F3BB;
 
 body {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
+    min-width: 320;
     display: flex;
     flex-flow: column nowrap;
     margin: auto;
@@ -239,7 +240,6 @@ main {
 
 .tercer_articulo {
     width: 100%;
-
     h2 {
         margin-top: 6vh;
         margin-bottom: 5vh;
@@ -365,8 +365,6 @@ footer {
             }
         }
 
-
-
         .image_menu {
             display: none;
         }
@@ -392,26 +390,154 @@ footer {
                 height: 100%;
 
                 li {
-                    list-style: none;
                     text-align: left;
-                    margin-left: 4vh;
                     padding-left: 30px;
 
                     a {
                         color: $color-primary;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        font-family: 'IBM Plex Mono', monospace;
-                        font-weight: 300;
-                    }
-
-                    a:hover {
-                        color: $color-terciario;
                     }
                 }
             }
         }
 
     }
+    .contenido {
+        display: flex;
+        flex-flow: row wrap;
+      
+        h2 {
+            font-size: 42px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 300;
+            margin: 64px 0 2vh 5%;
+            color: white;
+        }
+    
+        .episodios {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            align-items: flex-start;
+            flex-flow: row wrap;
+            height: 900px;
+            iframe {
+                width: 40%;
+                max-width: 500px;
+            }
+        }
+    }
+    .primer_articulo{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        .phone{
+            margin-left: 20px;
+        }
+        .parrafo {
+            text-align: justify;
+            margin-left: 5%;
+            margin-right: 10%;
+        }
+    }
+    .galeria {
+        width: 100%;
+        .imagenes {
+            width: 50%;
+        }
+    }
+    .tercer_articulo {
+        //imagenes con temas, son 4//
+        .contenedor-temas {
+            display: flex;
+            flex-flow: row wrap;
+            .temas {
+                width: 50%;
+                justify-content: space-around;
+            }
+        }
+    }
+    .cuarto_articulo {
+        h2 {
+            margin: 32px 5% 32px 5%;
+        }
+    }
+}
 
+@media screen and (min-width:1024px) {
+    .encabezado {
+        margin-top: 100px;
+        h1 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 48px;
+            margin-left: 5%;
+            color: $color-primary;
+        }
+    
+        h1::after {
+            content: ".";
+            color: blue;
+        }
+    
+        p {
+           margin-top: 0;
+            margin-left: 5%;
+            width: 45%;
+            &::before {
+                content: "El portal de podcasts que explora el mundo de la programación y la tecnología.";
+            }
+        }
+    
+        .boton {
+            width: 226px;
+            margin-left: 5%;
+        }
+    }
+    .contenido {
+        h2 {
+           margin-left: 9%;
+        }
+    }
+    .primer_articulo{
+        h2{
+            margin-top: 70px;
+        }
+        p{
+            width: 464px;
+            height: 204px;
+        }
+    }
+    .galeria {
+        .imagenes {
+            width: 33%;
+        }
+    }
+    .tercer_articulo {
+        h2{
+            margin-bottom: 0;
+        }
+        .contenedor-temas {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            flex-flow: row nowrap;
+        }
+    }
+    footer {
+        width: 90%;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        margin: auto;
+        h5 {
+            text-align: left;
+            width: 25%;
+            margin-left: 0;
+        }
+        .contactos {
+            display: flex;
+            margin-bottom: 0vh;
+            width: 20%;
+            align-items: center;
+            justify-content: space-between
+        }
+    }
 }

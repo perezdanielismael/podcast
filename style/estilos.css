@@ -6,7 +6,8 @@
 
 body {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
+  min-width: 320;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,20 +497,169 @@ footer .contactos img:hover {
     height: 100%;
   }
   header .menu .container li {
-    list-style: none;
     text-align: left;
-    margin-left: 4vh;
     padding-left: 30px;
   }
   header .menu .container li a {
     color: #060A24;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 300;
   }
-  header .menu .container li a:hover {
-    color: #00F3BB;
+  .contenido {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .contenido h2 {
+    font-size: 42px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    margin: 64px 0 2vh 5%;
+    color: white;
+  }
+  .contenido .episodios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: 900px;
+  }
+  .contenido .episodios iframe {
+    width: 40%;
+    max-width: 500px;
+  }
+  .primer_articulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  .primer_articulo .phone {
+    margin-left: 20px;
+  }
+  .primer_articulo .parrafo {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+  .galeria {
+    width: 100%;
+  }
+  .galeria .imagenes {
+    width: 50%;
+  }
+  .tercer_articulo .contenedor-temas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .tercer_articulo .contenedor-temas .temas {
+    width: 50%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cuarto_articulo h2 {
+    margin: 32px 5% 32px 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .encabezado {
+    margin-top: 100px;
+  }
+  .encabezado h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    margin-left: 5%;
+    color: #060A24;
+  }
+  .encabezado h1::after {
+    content: ".";
+    color: blue;
+  }
+  .encabezado p {
+    margin-top: 0;
+    margin-left: 5%;
+    width: 45%;
+  }
+  .encabezado p::before {
+    content: "El portal de podcasts que explora el mundo de la programación y la tecnología.";
+  }
+  .encabezado .boton {
+    width: 226px;
+    margin-left: 5%;
+  }
+  .contenido h2 {
+    margin-left: 9%;
+  }
+  .primer_articulo h2 {
+    margin-top: 70px;
+  }
+  .primer_articulo p {
+    width: 464px;
+    height: 204px;
+  }
+  .galeria .imagenes {
+    width: 33%;
+  }
+  .tercer_articulo h2 {
+    margin-bottom: 0;
+  }
+  .tercer_articulo .contenedor-temas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  footer {
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: auto;
+  }
+  footer h5 {
+    text-align: left;
+    width: 25%;
+    margin-left: 0;
+  }
+  footer .contactos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0vh;
+    width: 20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
