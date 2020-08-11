@@ -4,6 +4,19 @@
   margin: 0;
 }
 
+body {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: auto;
+}
+
 header {
   width: 100%;
   height: 12vh;
@@ -33,11 +46,20 @@ header #btn-menu {
   display: none;
 }
 
-header label img {
-  width: 30px;
-  height: 30px;
-  margin-right: 4vw;
+header .image_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
+  margin-right: 4vh;
 }
 
 header .image_cruz {
@@ -88,7 +110,7 @@ header .menu .container li a:hover {
 }
 
 header #btn-menu:checked ~ .menu {
-  margin-top: 130px;
+  margin-top: 258px;
 }
 
 header #btn-menu:checked ~ .image_menu {
@@ -96,7 +118,18 @@ header #btn-menu:checked ~ .image_menu {
 }
 
 header #btn-menu:checked ~ .image_cruz {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 4vh;
 }
 
 main {
@@ -218,6 +251,7 @@ main {
   width: 100%;
   position: relative;
   margin-top: -100px;
+  max-width: 400px;
 }
 
 .articulos h2 {
@@ -407,403 +441,75 @@ footer .contactos img:hover {
           transform: scale(1.5);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   header {
     width: 100%;
-  }
-  header .logo {
-    margin-left: 7%;
-  }
-  header label {
-    display: none;
-  }
-  header .menu {
-    background: white;
-    margin-right: 8%;
-    width: 50%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    margin-top: 0px;
-  }
-  header .menu .container {
-    width: 100%;
-    height: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    height: 12vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  header .menu .container li {
-    height: 20px;
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5%;
   }
-  header .menu .container li a {
-    color: #060A24;
+  header .logo img {
+    width: 36px;
   }
-  header #btn-menu:checked ~ .menu {
-    margin-top: 0px;
+  header .image_menu {
+    display: none;
   }
   header .image_cruz {
     display: none;
   }
-  .encabezado h1 {
-    margin-left: 10%;
-    font-size: 4vw;
-  }
-  h1::after {
-    color: blue;
-  }
-  .encabezado p::before {
-    content: "El portal de podcasts que explora el mundo de la programación y la tecnología. ";
-  }
-  .encabezado p {
-    width: 45%;
-    font-size: 14px;
-    margin-left: 10%;
-    margin-top: auto;
-    padding-left: 1px;
-  }
-  .encabezado .boton {
-    margin-left: 10%;
-    width: 226px;
-  }
-  body {
-    height: 100%;
-  }
-  main {
-    height: 100%;
-  }
-  .contenido {
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-  }
-  .contenido h2 {
-    margin: 12% 0 2vh 13.9%;
-    font-size: 36px;
-  }
-  main .contenido .episodios {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
-    height: 550px;
-  }
-  main .contenido .episodios iframe {
-    width: 35%;
-    height: 150px;
-    margin: 30px;
-  }
-  .articulos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    height: 1800px;
-  }
-  .articulos .phone {
-    width: 40%;
-    margin-left: 5%;
-  }
-  .articulos .primer_articulo {
-    margin-left: 45%;
-    position: relative;
-    top: -400px;
-  }
-  .articulos .primer_articulo h2 {
-    width: 399px;
-    height: 48px;
-  }
-  .articulos .primer_articulo .parrafo {
-    width: 350px;
-    height: 204px;
-    font-size: 14px;
-  }
-  .articulos .segundo_articulo {
-    position: relative;
-    top: -250px;
-  }
-  .articulos .segundo_articulo h2 {
-    width: 100%;
-    margin-left: 8%;
-    padding-bottom: 20px;
-  }
-  .articulos .segundo_articulo .galeria {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
-  .articulos .segundo_articulo .galeria .imagenes {
-    width: 50%;
-  }
-  .articulos .tercer_articulo {
-    position: relative;
-    top: -250px;
-  }
-  .articulos .tercer_articulo h2 {
-    margin-left: 8%;
-  }
-  .articulos .tercer_articulo .contenedor-temas {
-    width: 80%;
-    margin: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .articulos .cuarto_articulo {
-    position: relative;
-    top: -250px;
-    height: 220px;
-    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-  }
-  .articulos .cuarto_articulo h2 {
-    position: relative;
-    top: 4vh;
-    font-size: 36px;
-    margin-left: 0;
-  }
-  .articulos .cuarto_articulo .boton2 {
-    position: relative;
-    top: 2vh;
-  }
-  footer {
-    position: relative;
-    height: 80px;
-    top: 20vw;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-  }
-  footer h5 {
-    margin-left: 10%;
-    width: 60%;
-  }
-  footer .contactos {
-    height: 50px;
-    margin-right: 10%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  footer .contactos img {
-    padding-left: 20px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  header {
-    width: 100%;
-  }
-  header .logo {
-    margin-left: 8%;
-  }
-  header label {
-    display: none;
-  }
   header .menu {
     background: white;
+    margin-top: 0;
     margin-right: 5%;
-    width: 50%;
-    height: 100%;
-    display: inline-block;
+    width: 70%;
+    height: 40px;
     position: relative;
-    margin-top: 0px;
   }
   header .menu .container {
     width: 100%;
-    height: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .menu .container li {
-    height: 20px;
-  }
-  header .menu .container li a {
-    color: #060A24;
-  }
-  header #btn-menu:checked ~ .menu {
-    margin-top: 0px;
-  }
-  header .image_cruz {
-    display: none;
-  }
-  .encabezado h1 {
-    margin-left: 10%;
-    font-size: 4vw;
-  }
-  h1::after {
-    color: blue;
-  }
-  .encabezado p::before {
-    content: "El portal de podcasts que explora el mundo de la programación y la tecnología. ";
-  }
-  .encabezado p {
-    width: 45%;
-    font-size: 14px;
-    margin-left: 10%;
-    margin-top: auto;
-    padding-left: 1px;
-  }
-  .encabezado .boton {
-    margin-left: 10%;
-    width: 226px;
-  }
-  body {
-    height: 100%;
-  }
-  main {
-    height: 100%;
-  }
-  .contenido {
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-  }
-  main .contenido h2 {
-    margin: 8% 0 2vh 13.9%;
-    font-size: 48px;
-  }
-  main .contenido .episodios {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
-    height: 700px;
-  }
-  main .contenido .episodios iframe {
-    width: 35%;
-    height: 232px;
-    margin: 30px;
-  }
-  .articulos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    height: 1800px;
-  }
-  .articulos .phone {
-    width: 31%;
-    margin-left: 10%;
-  }
-  .articulos .primer_articulo {
-    margin-left: 45%;
-    position: relative;
-    top: -450px;
-  }
-  .articulos .primer_articulo h2 {
-    width: 399px;
-    height: 64px;
-  }
-  .articulos .primer_articulo .parrafo {
-    width: 464px;
-    height: 204px;
-    font-size: 16px;
-  }
-  .articulos .segundo_articulo {
-    position: relative;
-    top: -250px;
-  }
-  .articulos .segundo_articulo h2 {
-    width: 100%;
-    margin-left: 8%;
-    padding-bottom: 20px;
-  }
-  .articulos .segundo_articulo .galeria {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .articulos .segundo_articulo .galeria .imagenes {
-    width: 33.3%;
-  }
-  .articulos .tercer_articulo {
-    position: relative;
-    top: -250px;
-  }
-  .articulos .tercer_articulo h2 {
-    margin-left: 8%;
-  }
-  .articulos .tercer_articulo .contenedor-temas {
-    width: 80%;
-    margin: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .articulos .cuarto_articulo {
-    position: relative;
-    top: -250px;
-    height: 420px;
-    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-  }
-  .articulos .cuarto_articulo h2 {
-    margin-left: 0;
-  }
-  footer {
-    position: relative;
-    height: 80px;
-    top: 30px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-  }
-  footer h5 {
-    margin-left: 5%;
-    width: 400px;
-  }
-  footer .contactos {
-    height: 50px;
-    margin-right: 10%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
   }
-  footer .contactos img {
-    padding-left: 20px;
+  header .menu .container li {
+    list-style: none;
+    text-align: left;
+    margin-left: 4vh;
+    padding-left: 30px;
   }
-}
-
-@media screen and (min-width: 1100px) {
-  .boton2 {
-    margin-top: 50px;
+  header .menu .container li a {
+    color: #060A24;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
   }
-  footer {
-    top: 350px;
+  header .menu .container li a:hover {
+    color: #00F3BB;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

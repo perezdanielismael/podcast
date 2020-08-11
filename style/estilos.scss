@@ -1,4 +1,3 @@
-
 $color-primary: #060A24;
 $color-secundary: blue;
 $color-terciario:#00F3BB;
@@ -6,6 +5,14 @@ $color-terciario:#00F3BB;
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: auto;
 }
 
 header {
@@ -28,13 +35,17 @@ header {
         display: none;
     }
 
-    label img {
-        width: 30px;
-        height: 30px;
-        margin-right: 4vw;
+    .image_menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
         cursor: pointer;
+        margin-right: 4vh;
     }
-    .image_cruz{
+
+    .image_cruz {
         display: none;
     }
 
@@ -75,13 +86,21 @@ header {
     }
 
     #btn-menu:checked~.menu {
-        margin-top: 130px;
+        margin-top: 258px;
     }
+
     #btn-menu:checked~.image_menu {
         display: none;
     }
+
     #btn-menu:checked~.image_cruz {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        margin-right: 4vh;
+
     }
 }
 
@@ -180,6 +199,7 @@ main {
         width: 100%;
         position: relative;
         margin-top: -100px;
+        max-width: 400px;
     }
 
     h2 {
@@ -328,424 +348,70 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width:680px) {
     header {
         width: 100%;
+        height: 12vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .logo {
-            margin-left: 7%;
-        }
-
-        label {
-            display: none;
-        }
-
-        .menu {
-            background: white;
-            margin-right: 8%;
-            width: 50%;
-            height: 100%;
-            display: inline-block;
-            position: relative;
-            margin-top: 0px;
-
-            .container {
-                width: 100%;
-                height: 100%;
-                flex-direction: row;
-                align-items: center;
-
-
-                li {
-                    height: 20px;
-
-                    a {
-                        color: $color-primary;
-                    }
-                }
-            }
-        }
-
-        #btn-menu:checked~.menu {
-            margin-top: 0px;
-        }
-        .image_cruz{
-            display: none;
-        }
-    }
-
-    .encabezado h1 {
-        margin-left: 10%;
-        font-size: 4vw;
-    }
-
-    h1::after {
-        color: $color-secundary;
-    }
-
-    .encabezado p::before {
-        content: "El portal de podcasts que explora el mundo de la programación y la tecnología. ";
-
-    }
-
-    .encabezado p {
-        width: 45%;
-        font-size: 14px;
-        margin-left: 10%;
-        margin-top: auto;
-        padding-left: 1px;
-    }
-
-    .encabezado .boton {
-        margin-left: 10%;
-        width: 226px;
-    }
-
-    body {
-        height: 100%;
-    }
-
-    main {
-        height: 100%;
-    }
-
-    .contenido {
-        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-        h2 {
-            margin: 12% 0 2vh 13.9%;
-            font-size: 36px;
-        }
-    }
-
-    main .contenido .episodios {
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: flex-start;
-        height: 550px;
-
-        iframe {
-            width: 35%;
-            height: 150px;
-            margin: 30px;
-        }
-    }
-
-    .articulos {
-        display: flex;
-        flex-flow: row wrap;
-        height: 1800px;
-
-        .phone {
-            width: 40%;
+            display: flex;
             margin-left: 5%;
-        }
-
-        .primer_articulo {
-            margin-left: 45%;
-            position: relative;
-            top: -400px;
-
-            h2 {
-                width: 399px;
-                height: 48px;
-            }
-
-            .parrafo {
-                width: 350px;
-                height: 204px;
-                font-size: 14px;
-            }
-        }
-
-        .segundo_articulo {
-            position: relative;
-            top: -250px;
-
-            h2 {
-                width: 100%;
-                margin-left: 8%;
-                padding-bottom: 20px;
-            }
-
-            .galeria {
-                display: flex;
-                flex-flow: row wrap;
-
-                .imagenes {
-                    width: 50%;
-                }
-            }
-        }
-
-        .tercer_articulo {
-            position: relative;
-            top: -250px;
-
-            h2 {
-                margin-left: 8%;
-            }
-
-            .contenedor-temas {
-                width: 80%;
-                margin: auto;
-                flex-flow: row nowrap;
-                justify-content: space-around;
-
-            }
-        }
-
-        .cuarto_articulo {
-            position: relative;
-            top: -250px;
-            height: 220px;
-            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-
-            h2 {
-                position: relative;
-                top: 4vh;
-                font-size: 36px;
-                margin-left: 0;
-            }
-            .boton2{
-                position: relative;
-                top: 2vh;
-            }
-        }
-    }
-
-    footer {
-        position: relative;
-        height: 80px;
-        top: 20vw;
-        flex-flow: row nowrap;
-
-        h5 {
-            margin-left: 10%;
-            width: 60%;
-        }
-
-        .contactos {
-            height: 50px;
-            margin-right: 10%;
-            justify-content: flex-end;
 
             img {
-                padding-left: 20px;
+                width: 36px;
             }
         }
-    }
-}
 
-@media screen and (min-width: 1024px){
-    header {
-        width: 100%;
 
-        .logo {
-            margin-left: 8%;
+
+        .image_menu {
+            display: none;
         }
 
-        label {
+        .image_cruz {
             display: none;
         }
 
         .menu {
             background: white;
+            margin-top: 0;
             margin-right: 5%;
-            width: 50%;
-            height: 100%;
-            display: inline-block;
+            width: 70%;
+            height: 40px;
             position: relative;
-            margin-top: 0px;
 
             .container {
                 width: 100%;
-                height: 100%;
-                flex-direction: row;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
                 align-items: center;
-
+                height: 100%;
 
                 li {
-                    height: 20px;
+                    list-style: none;
+                    text-align: left;
+                    margin-left: 4vh;
+                    padding-left: 30px;
 
                     a {
                         color: $color-primary;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-family: 'IBM Plex Mono', monospace;
+                        font-weight: 300;
+                    }
+
+                    a:hover {
+                        color: $color-terciario;
                     }
                 }
             }
         }
 
-        #btn-menu:checked~.menu {
-            margin-top: 0px;
-        }
-        .image_cruz{
-            display: none;
-        }
-    }
-
-    .encabezado h1 {
-        margin-left: 10%;
-        font-size: 4vw;
-    }
-
-    h1::after {
-        color: $color-secundary;
-    }
-
-    .encabezado p::before {
-        content: "El portal de podcasts que explora el mundo de la programación y la tecnología. ";
-
-    }
-
-    .encabezado p {
-        width: 45%;
-        font-size: 14px;
-        margin-left: 10%;
-        margin-top: auto;
-        padding-left: 1px;
-    }
-
-    .encabezado .boton {
-        margin-left: 10%;
-        width: 226px;
-    }
-
-    body {
-        height: 100%;
-    }
-
-    main {
-        height: 100%;
-    }
-
-    .contenido {
-        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    }
-
-    main .contenido h2 {
-        margin: 8% 0 2vh 13.9%;
-        font-size: 48px;
-    }
-
-    main .contenido .episodios {
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: flex-start;
-        height: 700px;
-
-        iframe {
-            width: 35%;
-            height: 232px;
-            margin: 30px;
-        }
-    }
-
-    .articulos {
-        display: flex;
-        flex-flow: row wrap;
-        height: 1800px;
-
-        .phone {
-            width: 31%;
-            margin-left: 10%;
-        }
-
-        .primer_articulo {
-            margin-left: 45%;
-            position: relative;
-            top: -450px;
-
-            h2 {
-                width: 399px;
-                height: 64px;
-            }
-
-            .parrafo {
-                width: 464px;
-                height: 204px;
-                font-size: 16px;
-            }
-        }
-
-        .segundo_articulo {
-            position: relative;
-            top: -250px;
-
-            h2 {
-                width: 100%;
-                margin-left: 8%;
-                padding-bottom: 20px;
-            }
-
-            .galeria {
-                display: flex;
-
-                .imagenes {
-                    width: 33.3%;
-                }
-            }
-        }
-
-        .tercer_articulo {
-            position: relative;
-            top: -250px;
-
-            h2 {
-                margin-left: 8%;
-            }
-
-            .contenedor-temas {
-                width: 80%;
-                margin: auto;
-                flex-flow: row nowrap;
-                justify-content: space-around;
-
-            }
-        }
-
-        .cuarto_articulo {
-            position: relative;
-            top: -250px;
-            height: 420px;
-            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-
-            h2 {
-                margin-left: 0;
-            }
-           
-        }
-    }
-
-    footer {
-        position: relative;
-        height: 80px;
-        top: 30px;
-        flex-flow: row nowrap;
-
-        h5 {
-            margin-left: 5%;
-            width: 400px;
-        }
-
-        .contactos {
-            height: 50px;
-            margin-right: 10%;
-            justify-content: flex-end;
-
-            img {
-                padding-left: 20px;
-            }
-        }
     }
 
 }
-
-@media screen and (min-width: 1100px){
-    .boton2{
-        margin-top: 50px;
-    }
-    
-    footer{
-        top: 350px;
-    }
-}
-
