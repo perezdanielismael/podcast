@@ -111,7 +111,7 @@ header .menu .container li a:hover {
 }
 
 header #btn-menu:checked ~ .menu {
-  margin-top: 258px;
+  margin-top: 130px;
 }
 
 header #btn-menu:checked ~ .image_menu {
