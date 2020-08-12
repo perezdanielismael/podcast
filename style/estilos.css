@@ -546,9 +546,6 @@ footer .contactos img:hover {
     width: 80%;
     margin: auto;
   }
-  .primer_articulo .phone {
-    margin-left: 20px;
-  }
   .primer_articulo .parrafo {
     text-align: justify;
     margin-left: 5%;
@@ -635,6 +632,9 @@ footer .contactos img:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+  }
+  .cuarto_articulo {
+    height: 400px;
   }
   footer {
     width: 90%;
