@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/estilos.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" type="text/css" rel="stylesheet">
     <title>Podcast</title>
 </head>
 
@@ -18,8 +18,8 @@
             <img src="images/logo.svg" alt="logo">
         </div>
         <input type="checkbox" id="btn-menu">
-        <label class="image_menu" for="btn-menu"><i class="fas fa-bars fa-2x"></i></label>
-        <label class="image_cruz" for="btn-menu"><i class="fas fa-times fa-2x"></i></label>
+        <label class="image_menu" for="btn-menu"><span class="fas fa-bars fa-2x"></span></label>
+        <label class="image_cruz" for="btn-menu"><span class="fas fa-times fa-2x"></span></label>
         <nav class="menu">
             <ul class="container">
                 <li>
@@ -58,8 +58,8 @@
         </section>
         <section class="articulos">
             <div class="primer_articulo">
-                <img class="phone" src="images/phone.png" id="nosotros" alt="phone">
-                <div class="texto">
+                <img class="phone" src="images/phone.png" alt="phone">
+                <div class="texto" id="nosotros">
                     <h2>De dónde venimos</h2>
                     <p class="parrafo">Our posturings, our imagined self-importance, the delusion that we have some
                         privileged position in the Universe, are challenged by this point of pale light. <br><br> Our
@@ -112,11 +112,11 @@
     <footer>
         <h5>© 2019 — Hello blue pale dot</h5>
         <div class="contactos">
-            <img src="images/spotify.svg" alt="spotify">
-            <img src="images/instagram.svg" alt="instagram">
-            <img src="images/twitter.svg" alt="twitter">
-            <img src="images/facebook.svg" alt="facebook">
-            <img src="images/telegram.svg" alt="telegram">
+            <a href="https://www.spotify.com/ar/"> <img src="images/spotify.svg" alt="spotify"></a>
+            <a href="https://www.instagram.com/?hl=es-la"> <img src="images/instagram.svg" alt="instagram"></a>
+            <a href="https://twitter.com/?lang=es"> <img src="images/twitter.svg" alt="twitter"> </a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="https://web.telegram.org/#/login"> <img src="images/telegram.svg" alt="telegram"></a>
         </div>
     </footer>
 </body>

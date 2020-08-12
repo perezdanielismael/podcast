@@ -468,7 +468,13 @@ footer .contactos img:hover {
   header .image_menu {
     display: none;
   }
+  header .image_menu .fas .fa-bars .fa-2x {
+    display: none;
+  }
   header .image_cruz {
+    display: none;
+  }
+  header .image_cruz .fas .fa-times .fa-2x {
     display: none;
   }
   header .menu {

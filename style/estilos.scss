@@ -356,10 +356,16 @@ footer {
 
         .image_menu {
             display: none;
+            .fas .fa-bars .fa-2x{
+                display: none;
+            }
         }
 
         .image_cruz {
             display: none;
+            .fas .fa-times .fa-2x{
+                display: none;
+            }
         }
 
         .menu {
