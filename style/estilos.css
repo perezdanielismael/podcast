@@ -430,7 +430,7 @@ footer .contactos {
   margin-bottom: 5vh;
 }
 
-footer .contactos .fab {
+footer .contactos .fa {
   cursor: pointer;
   width: 16px;
 }
@@ -461,13 +461,13 @@ footer .contactos .fab {
   header .image_menu {
     display: none;
   }
-  header .image_menu .fas .fa-bars .fa-2x {
+  header .image_menu .fa .fa-bars .fa-2x {
     display: none;
   }
   header .image_cruz {
     display: none;
   }
-  header .image_cruz .fas .fa-times .fa-2x {
+  header .image_cruz .fa .fa-times .fa-2x {
     display: none;
   }
   header #btn-menu:checked ~ .image_cruz {
