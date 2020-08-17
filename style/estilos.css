@@ -111,7 +111,7 @@ header .menu .container li a:hover {
 }
 
 header #btn-menu:checked ~ .menu {
-  margin-top: 230px;
+  margin-top: 130px;
 }
 
 header #btn-menu:checked ~ .image_menu {
@@ -476,6 +476,12 @@ footer .contactos img:hover {
   }
   header .image_cruz .fas .fa-times .fa-2x {
     display: none;
+  }
+  header #btn-menu:checked ~ .image_cruz {
+    display: none;
+  }
+  header #btn-menu:checked ~ .menu {
+    margin-top: 0;
   }
   header .menu {
     background: white;

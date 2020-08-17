@@ -6,6 +6,7 @@ $color-terciario:#00F3BB;
     padding: 0;
     margin: 0;
 }
+
 body {
     width: 100%;
     max-width: 1440px;
@@ -14,6 +15,7 @@ body {
     flex-flow: column nowrap;
     margin: auto;
 }
+
 header {
     width: 100%;
     height: 12vh;
@@ -85,7 +87,7 @@ header {
     }
 
     #btn-menu:checked~.menu {
-        margin-top: 230px;
+        margin-top: 130px;
     }
 
     #btn-menu:checked~.image_menu {
@@ -102,9 +104,11 @@ header {
 
     }
 }
+
 main {
     width: 100%;
 }
+
 .encabezado {
     display: flex;
     flex-flow: column wrap;
@@ -153,6 +157,7 @@ main {
         color: white;
     }
 }
+
 .contenido {
     width: 100%;
     margin-top: 3vh;
@@ -185,6 +190,7 @@ main {
         }
     }
 }
+
 .articulos {
     width: 100%;
     display: flex;
@@ -214,6 +220,7 @@ main {
         margin-right: 5%;
     }
 }
+
 .galeria {
     width: 100%;
     display: flex;
@@ -230,8 +237,10 @@ main {
         }
     }
 }
+
 .tercer_articulo {
     width: 100%;
+
     h2 {
         margin-top: 6vh;
         margin-bottom: 5vh;
@@ -268,6 +277,7 @@ main {
     }
 
 }
+
 .cuarto_articulo {
     width: 100%;
     display: flex;
@@ -305,6 +315,7 @@ main {
         color: white;
     }
 }
+
 footer {
     width: 100%;
     display: flex;
@@ -337,6 +348,7 @@ footer {
         }
     }
 }
+
 @media screen and (min-width:680px) {
     header {
         width: 100%;
@@ -356,16 +368,25 @@ footer {
 
         .image_menu {
             display: none;
-            .fas .fa-bars .fa-2x{
+
+            .fas .fa-bars .fa-2x {
                 display: none;
             }
         }
 
         .image_cruz {
             display: none;
-            .fas .fa-times .fa-2x{
+
+            .fas .fa-times .fa-2x {
                 display: none;
             }
+        }
+
+        #btn-menu:checked~.image_cruz {
+            display: none;
+        }
+        #btn-menu:checked~.menu{
+            margin-top: 0;
         }
 
         .menu {
@@ -396,9 +417,11 @@ footer {
         }
 
     }
+
     .contenido {
         display: flex;
-        flex-flow: row wrap;   
+        flex-flow: row wrap;
+
         h2 {
             font-size: 42px;
             font-family: 'IBM Plex Sans', sans-serif;
@@ -406,6 +429,7 @@ footer {
             margin: 64px 0 2vh 5%;
             color: white;
         }
+
         .episodios {
             display: flex;
             flex-flow: row wrap;
@@ -413,6 +437,7 @@ footer {
             align-content: flex-start;
             margin: auto;
             height: 700px;
+
             iframe {
                 padding-top: 20px;
                 width: 40%;
@@ -420,97 +445,115 @@ footer {
             }
         }
     }
-    .primer_articulo{
+
+    .primer_articulo {
         display: flex;
         width: 80%;
         margin: auto;
+
         .parrafo {
             text-align: justify;
             margin-left: 5%;
             margin-right: 10%;
         }
     }
+
     .galeria {
         width: 100%;
+
         .imagenes {
             width: 50%;
         }
     }
+
     .tercer_articulo {
+
         //imagenes con temas, son 4//
         .contenedor-temas {
             display: flex;
             flex-flow: row wrap;
+
             .temas {
                 width: 50%;
                 justify-content: space-around;
             }
         }
     }
+
     .cuarto_articulo {
         h2 {
             margin: 32px 5% 32px 5%;
         }
     }
 }
+
 @media screen and (min-width:1024px) {
     .encabezado {
         margin-top: 100px;
+
         h1 {
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 48px;
             margin-left: 5%;
             color: $color-primary;
         }
-    
+
         h1::after {
             content: ".";
             color: blue;
         }
-    
+
         p {
-           margin-top: 0;
+            margin-top: 0;
             margin-left: 5%;
             width: 45%;
+
             &::before {
                 content: "El portal de podcasts que explora el mundo de la programación y la tecnología.";
             }
         }
-    
+
         .boton {
             width: 226px;
             margin-left: 5%;
         }
     }
+
     .contenido {
         h2 {
-           margin-left: 9%;
+            margin-left: 9%;
         }
     }
-    .primer_articulo{
-        h2{
+
+    .primer_articulo {
+        h2 {
             margin-top: 70px;
         }
-        p{
+
+        p {
             width: 464px;
             height: 204px;
         }
     }
-    .segundo_articulo{
-        h2{
+
+    .segundo_articulo {
+        h2 {
             margin-left: 10%;
         }
     }
+
     .galeria {
         .imagenes {
             width: 33%;
         }
     }
+
     .tercer_articulo {
-        h2{
+        h2 {
             margin-bottom: 0;
             margin-left: 10%;
         }
+
         .contenedor-temas {
             display: flex;
             width: 80%;
@@ -518,19 +561,23 @@ footer {
             flex-flow: row nowrap;
         }
     }
-    .cuarto_articulo{
+
+    .cuarto_articulo {
         height: 400px;
     }
+
     footer {
         width: 90%;
         justify-content: space-between;
         flex-flow: row nowrap;
         margin: auto;
+
         h5 {
             text-align: left;
             width: 25%;
             margin-left: 0;
         }
+
         .contactos {
             display: flex;
             margin-bottom: 0vh;
