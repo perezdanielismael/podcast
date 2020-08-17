@@ -47,19 +47,23 @@ header #btn-menu {
   display: none;
 }
 
-header .fa-bars {
+header .image_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  left: 220%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 36px;
   height: 36px;
   cursor: pointer;
   margin-right: 4vh;
 }
 
-header .fa-times {
+header .image_cruz {
   display: none;
 }
 
@@ -110,11 +114,11 @@ header #btn-menu:checked ~ .menu {
   margin-top: 130px;
 }
 
-header #btn-menu:checked ~ label .fa-bars {
+header #btn-menu:checked ~ .image_menu {
   display: none;
 }
 
-header #btn-menu:checked ~ label .fa-times {
+header #btn-menu:checked ~ .image_cruz {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,16 +430,9 @@ footer .contactos {
   margin-bottom: 5vh;
 }
 
-footer .contactos img {
+footer .contactos .fab {
   cursor: pointer;
   width: 16px;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-footer .contactos img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
 }
 
 @media screen and (min-width: 680px) {
@@ -461,16 +458,19 @@ footer .contactos img:hover {
   header .logo img {
     width: 36px;
   }
-  header .fa-bars {
+  header .image_menu {
     display: none;
   }
-  header .fa-bars .fas .fa-bars .fa-2x {
+  header .image_menu .fas .fa-bars .fa-2x {
     display: none;
   }
-  header .fa-times {
+  header .image_cruz {
     display: none;
   }
-  header #btn-menu:checked ~ label .fa-times {
+  header .image_cruz .fas .fa-times .fa-2x {
+    display: none;
+  }
+  header #btn-menu:checked ~ .image_cruz {
     display: none;
   }
   header #btn-menu:checked ~ .menu {

@@ -36,17 +36,17 @@ header {
         display: none;
     }
 
-    .fa-bars {
+    .image_menu {
         display: flex;
-        position: relative;
-        left: 220%;
+        justify-content: center;
+        align-items: center;
         width: 36px;
         height: 36px;
         cursor: pointer;
         margin-right: 4vh;
     }
 
-    .fa-times {
+    .image_cruz {
         display: none;
     }
 
@@ -90,11 +90,11 @@ header {
         margin-top: 130px;
     }
 
-    #btn-menu:checked~label .fa-bars {
+    #btn-menu:checked~.image_menu {
         display: none;
     }
 
-    #btn-menu:checked~label .fa-times {
+    #btn-menu:checked~.image_cruz {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -337,14 +337,9 @@ footer {
         width: 90%;
         margin-bottom: 5vh;
 
-        img {
+        .fab {
             cursor: pointer;
             width: 16px;
-            transition: all ease 0.5s;
-        }
-
-        img:hover {
-            transform: scale(1.5);
         }
     }
 }
@@ -366,7 +361,7 @@ footer {
             }
         }
 
-        .fa-bars {
+        .image_menu {
             display: none;
 
             .fas .fa-bars .fa-2x {
@@ -374,15 +369,18 @@ footer {
             }
         }
 
-        .fa-times {
+        .image_cruz {
             display: none;
+
+            .fas .fa-times .fa-2x {
+                display: none;
+            }
         }
 
-        #btn-menu:checked~label .fa-times {
+        #btn-menu:checked~.image_cruz {
             display: none;
         }
-
-        #btn-menu:checked~.menu {
+        #btn-menu:checked~.menu{
             margin-top: 0;
         }
 
